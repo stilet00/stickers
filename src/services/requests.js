@@ -26,13 +26,3 @@ export function editOne(sticker) {
         }
     }).then(res => res.json())
 }
-//
-// export function getContacts() {
-//     return fetch(URL).then(res => res.json())
-// }
-// export function deleteContact(id) {
-//     return fetch(URL + id, {
-//         method: 'DELETE'
-//     }).then(res => res.json())
-// }
-

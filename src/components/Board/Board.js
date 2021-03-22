@@ -3,21 +3,19 @@ import Sticker from "../Sticker/Sticker";
 import IconButton from '@material-ui/core/IconButton';
 import AddIcon from '@material-ui/icons/Add';
 import useSound from 'use-sound';
-import killPaper from '/Users/antonstilet/Desktop/sticker-board/src/cut.wav'
-import addPaper from '/Users/antonstilet/Desktop/sticker-board/src/add.wav'
+import killPaper from '../../cut.wav'
+import addPaper from '../../add.wav'
 import './Board.css'
 import {getStickers, createOne, deleteOne, editOne} from "../../services/requests";
+import {useAsync} from "../../hooks/hooks";
 
 
 function Board(props) {
-        const [stickers, setStickers] = useState([])
+
         const [playCut] = useSound(killPaper);
         const [playAdd] = useSound(addPaper);
-        useEffect(() => {
-            getStickers().then(res => {
-                setStickers(res.reverse())
-            })
-        }, [])
+        const {data: stickers, setData: setStickers, run} = useAsync(() => getStickers(stickers), [])
+        useEffect(run, [])
 
         function addSticker() {
            createOne().then(res => setStickers([res,...stickers]))
