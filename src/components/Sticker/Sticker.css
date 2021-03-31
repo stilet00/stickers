@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
 
 .sticker-body {
-    width: 31%;
-    height: 300px;
-    background: #FFC;
-    margin: 10px;
-    padding: 1.5em;
-    box-sizing: border-box;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    box-shadow: 5px 5px 5px black;
-
-
+  width: 31%;
+  height: 300px;
+  background: #ffc;
+  margin: 10px;
+  padding: 1.5em;
+  box-sizing: border-box;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-shadow: 5px 5px 5px black;
 }
+
 textarea {
-    font-family: 'Reenie Beanie', cursive;
-    height: 80%;
-    width: 100%;
-    padding: 20px;
-    font-size: 3em;
-    box-sizing: border-box;
-    background: #FFC;
-    text-align: center;
-    outline-color: white;
-    border: none;
-    cursor: pointer;
+  font-family: "Reenie Beanie", cursive;
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+  font-size: 3em;
+  box-sizing: border-box;
+  background: #ffc;
+  text-align: center;
+  outline-color: white;
+  border: none;
+  cursor: pointer;
 }

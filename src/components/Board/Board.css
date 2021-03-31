@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+
 body {
-    font-family: 'Reenie Beanie', cursive;
+  font-family: "Reenie Beanie", cursive;
 }
 
 .container {
-    background-image: url("https://klike.net/uploads/posts/2019-11/1572781330_4.jpg");
-    box-sizing: border-box;
-    background-size: cover;
-    width: 65%;
-    height: 800px;
-    margin: 20px auto;
-    border-radius: 10px;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px grey;
-    padding: 20px;
-    overflow: scroll;
-
+  background-image: url("https://klike.net/uploads/posts/2019-11/1572781330_4.jpg");
+  box-sizing: border-box;
+  background-size: cover;
+  width: 65%;
+  height: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px grey;
+  padding: 20px;
+  overflow: scroll;
 }
+
 .cardholder {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
